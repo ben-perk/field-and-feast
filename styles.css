@@ -7,7 +7,158 @@
     --linen: #F8F4EC;
     --dark-charcoal: #2B2B2B;
     --soft-white: #FAF9F6;
+    --dark-charcoal-shadow: rgba(43, 43, 43, 0.5);
   }
 /*   
 Font
 Playfair Display */ */
+
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap') format('woff2');
+}
+body{
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+header{
+    background-color: var(--midnight-blue);
+    color: var(--linen);
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+header h1{
+  color:(--var(--soft-white));
+  font-family: 'Playfair Display', serif;
+}
+
+nav{
+    background-color: var(--champagne-gold);
+    color: var(--dark-charcoal);
+    padding: 10px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 10px;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li{
+    margin: 0 15px;
+}
+
+nav a{
+    display: inline-block;
+    color: var(--dark-charcoal);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;;
+}
+
+h1{
+    font-family: 'Playfair Display', serif;
+    color: var(--midnight-blue);
+}
+
+h2{
+    font-family: 'Playfair Display', serif;
+    color: var(--midnight-blue);
+}
+
+hr{
+    border: 1px solid var(--champagne-gold);
+}
+
+h3{
+  color: var(--soft-white)
+}
+
+main p{
+    font-family: 'Playfair Display', serif;
+    color: var(--dark-charcoal);
+}
+
+/* #offerings p {
+  color: (--soft-white);
+} */
+
+#provisions{
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    box-shadow: 3px 3px 8px var(--dark-charcoal-shadow);
+    padding: 10px;
+    margin: 20px;
+    width:48%;
+    border-radius: 10px;
+    
+}
+
+#dining-experience{
+  background-color: var(--olive-green);
+    color: var(--soft-white);
+    box-shadow: 3px 3px 8px var(--dark-charcoal-shadow);
+    padding: 10px;
+    margin: 20px;
+    width:48%;
+    border-radius: 10px;
+}
+
+/* #provisions, #dining-experience {
+  background-color: var(--olive-green);
+  color: var(--soft-white);
+  width: 45%; 
+  float: left; 
+  margin-right: 2%; 
+  box-sizing: border-box; 
+  padding: 15px; 
+} */
+
+
+
+#monthly-basket{
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    box-shadow: 3px 3px 8px var(--dark-charcoal-shadow);
+    padding: 10px;
+    margin: 20px;
+    width:100%;
+    border-radius: 10px;
+}
+
+
+
+#provisions p, 
+#dining-experience p, 
+#monthly-basket p {
+    color: var(--soft-white); 
+    font-family: 'Playfair Display', serif;
+    line-height: 1.5; 
+}
+
+#view{
+    background-color: var(--olive-green);
+    color: var(--soft-white);
+    padding: 10px;
+    text-align: center;
+}
+
+#view p{
+    color: var(--soft-white);
+    text-decoration: none;
+}
+
