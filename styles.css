@@ -9,30 +9,17 @@
     --soft-white: #FAF9F6;
     --dark-charcoal-shadow: rgba(43, 43, 43, 0.5);
   }
-/*   
-Font
-Playfair Display */ */
 
-@font-face {
-    font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 400;
-    src: url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400&display=swap') format('woff2');
-}
-
-
-/* codeing start here */
+/* coding start here */
 body{
-  /* margin-left: 80px;
-  margin-right: 80px; */
-  color: var(--dark-charcoal)
+  font-family: 'Playfair Display', serif;
+  color: var(--dark-charcoal);
 }
 
 header{
     background-color: var(--midnight-blue);
     color: var(--linen);
     padding: 10px;
-    font-family: 'Playfair Display', serif;
     font-size: 24px;
     font-weight: 400;
     text-align: center;
@@ -40,11 +27,9 @@ header{
 
 header h1{
   color:var(--soft-white);
-  font-family: 'Playfair Display', serif;
 }
 
 main h2{
-  font-family: 'Playfair Display', serif;
   margin-top: 20px;
   padding-top: 40px;
 }
@@ -52,14 +37,13 @@ main h2{
 nav{
     background-color: var(--champagne-gold);
     color: var(--dark-charcoal);
-    padding: 12x 0;
-    font-family: 'Playfair Display', serif;
+    padding: 12px 0;
     font-size: 18px;
     font-weight: 400;
     text-align: center;
     border-radius: 10px;
     display: inline-block;
-    width :100%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -68,10 +52,9 @@ nav ul{
     margin: 0 auto;
     padding: 0;
     display: flex;
-    justify-content: space-between;
-    display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
-
+    gap: 20px;
 }
 
 nav li{
@@ -81,9 +64,9 @@ nav li{
 nav a{
     display: inline-block;
     color: var(--midnight-blue);
-    text-align: space-between;
+    align-items: space-evenly;
     padding: 10px;
-    text-decoration: none;;
+    text-decoration: none;
     font-size: 18px;
     font-weight: 400;
 }
@@ -103,7 +86,7 @@ hr{
 }
 
 h3{
-  color: var(--soft-white)
+  color: var(--soft-white);
 }
 
 main p{
@@ -117,7 +100,6 @@ li {
     color: var(--soft-white);
     font-family: 'Playfair Display', serif;
 }
-
 
 
 #provisions{
@@ -161,7 +143,7 @@ li {
 }
 
 
-#view p{
+#view a{
     color: var(--soft-white);
     text-decoration: none;
 }
@@ -175,10 +157,9 @@ li {
 }
 
 #pictures{ 
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: space-between;
     gap: 20px;
-    padding: 20px;
 }
 
 #pictures picture{
@@ -195,7 +176,7 @@ li {
 footer{
     text-align: center;
     background-color: var(--midnight-blue);
-    color: var(--soft-white)
+    color: var(--soft-white);
 }
 
 footer p{
@@ -207,11 +188,8 @@ footer p{
     padding: 10px;
 }
 
-footer phone{
-    color: var(--soft-white);
-    text-decoration: none;
-}
-footer a, footer email{
+
+footer a {
     color: var(--champagne-gold);
     text-decoration: none;
 }
@@ -229,53 +207,20 @@ footer a{
         flex-direction: column;
     }
 
-
-
-
-
-/* #provisions, #dining-experience {
-  background-color: var(--olive-green);
-  color: var(--soft-white);
-  width: 45%; 
-  float: left; 
-  margin-right: 2%; 
-  box-sizing: border-box; 
-  padding: 15px; 
-} */
-
-
-
-
-
-
-
-
-
-
-
-
 .container {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-}
-
-/* .container {
-    width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-} */
-
+    } 
 
 #pictures {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 20px;
-}
+    }
 
 
 #pictures > section {
@@ -287,7 +232,7 @@ footer a{
     margin-bottom: 15px;
     box-shadow: 3px 3px 8px var(--dark-charcoal-shadow);
     border-radius: 10px;
-}
+    }
 
 
 #pictures img {
@@ -296,19 +241,15 @@ footer a{
     display: block;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
-}
+    }
 
 
 #pictures i p {
     margin-top: 8px;
     text-align: center;
+    }
 }
 
-
-
-
-
-}
 /* for large screens */
 @media screen and (min-width: 900px){
     nav ul {
@@ -380,23 +321,27 @@ footer a{
 
 /* for mobile screens */
 @media screen and (max-width: 300px) {
-    #offerings-top-row{
+    #offerings-top-row {
         flex-direction: column;
-        align-items: spaace-between;    
+        align-items: space-between; 
     }
-#provisions, #dining-experience, #monthly-basket {
-    width: 100%;
-    margin: 0;
-}
-#provisions, #dining-experience {
-    margin-right: 0;
-}
-nav ul{
-    flex-direction: column;
-    align-items: center;
-    margin: 0 auto;
-}
-nav li{
-    margin: 10px 0;
-}
+
+    #provisions, #dining-experience, #monthly-basket {
+        width: 100%;
+        margin: 0;
+    }
+
+    #provisions, #dining-experience {
+        margin-right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
 }
